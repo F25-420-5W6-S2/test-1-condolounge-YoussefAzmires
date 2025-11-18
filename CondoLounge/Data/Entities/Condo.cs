@@ -11,17 +11,17 @@ namespace CondoLounge.Data.Entities
     {
         public int Id { get; set; }
 
-        [Required]
-        public int CondoNumber { get; set; }
-        public string Location { get; set; }
+        public string CondoNumber { get; set; } 
+        public string Address { get; set; }
 
+        // FK to Building
         public int BuildingId { get; set; }
+        public Building Building { get; set; }
+
+        public int? UserId { get; set; }
+        public ApplicationUser User { get; set; }
 
 
-        //navigation properties
-        public Building building { get; set; }
-
-        public ICollection<ApplicationUser> Users { get; set; } = new List<ApplicationUser>();
 
     }
 }

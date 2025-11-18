@@ -9,6 +9,12 @@ namespace CondoLounge.Data.Repositories
         internal readonly ILogger<CondoLoungeGenericGenericRepository<T>> _logger;
         internal readonly ApplicationDbContext _context;
         internal readonly DbSet<T> _dbSet;
+        private ApplicationDbContext db;
+
+        public CondoLoungeGenericGenericRepository(ApplicationDbContext db)
+        {
+            this.db = db;
+        }
 
         public CondoLoungeGenericGenericRepository(ApplicationDbContext db, ILogger<CondoLoungeGenericGenericRepository<T>> logger) 
         {

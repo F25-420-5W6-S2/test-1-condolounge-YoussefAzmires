@@ -95,7 +95,6 @@ C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\obj\
 C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CondoLounge.props
 C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CondoLounge.props
 C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\obj\Debug\net8.0\CondoLou.F1C35E16.Up2Date
 C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\obj\Debug\net8.0\CondoLounge.dll
 C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\obj\Debug\net8.0\refint\CondoLounge.dll

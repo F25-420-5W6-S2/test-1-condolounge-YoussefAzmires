@@ -8,10 +8,16 @@
     //A condo will have: CondoNumber, location/ address.
     public class Building
     {
+        //public int Id { get; set; }
+
+        //public ICollection<Condo> condos { get; set; } = new List<Condo>();
+
+        //public ICollection<ApplicationUser> Users { get; set; } = new List<ApplicationUser>();
+
         public int Id { get; set; }
+        public string Name { get; set; }       
 
-        public ICollection<Condo> condos { get; set; } = new List<Condo>();
-
-        public ICollection<ApplicationUser> Users { get; set; } = new List<ApplicationUser>();
+        public ICollection<Condo> Condos { get; set; }
     }
 }
+
