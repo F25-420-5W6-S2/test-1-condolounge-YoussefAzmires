@@ -34,8 +34,7 @@ namespace CondoLounge.Data.Repositories.Helpers
 
         protected virtual Func<ApplicationDbContext, object> DefaultEntityRepositoryFactory<T>() where T : class
         {
-            return dbContext => new CondoLoungeGenericGenericRepository<T>(dbContext, 
-                                        new Logger<CondoLoungeGenericGenericRepository<T>>(_loggerFactory));
+            return dbContext => new CondoLoungeGenericGenericRepository<T>(dbContext);
         }
     }
 }

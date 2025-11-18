@@ -12,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // MVC
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 // Database
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
@@ -20,7 +21,8 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// Identity
+
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole<int>>(options =>
         options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -50,11 +52,19 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+
 app.UseAuthentication(); // middleware
 app.UseAuthorization();  // middleware
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapRazorPages();    
+
+using (var scope = app.Services.CreateScope())
+{
+    var seeder = scope.ServiceProvider.GetRequiredService<Seeder>();
+    await seeder.Seed();
+}
 
 app.Run();

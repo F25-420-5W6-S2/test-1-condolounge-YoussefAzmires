@@ -20,3 +20,5 @@ To do:
 7. Create a repo method to get all the Condos for a Building (3%)
 
 
+
+

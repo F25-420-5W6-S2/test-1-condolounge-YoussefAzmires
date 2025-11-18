@@ -10,9 +10,16 @@ namespace CondoLounge.Data.Repositories
         {
         }
 
-        public IEnumerable<ApplicationUser> GetAllUsersForBuilding(int building)
+        public IEnumerable<ApplicationUser> GetAllUsersForBuilding(int buildingId)
         {
-            throw new NotImplementedException();
+            return _dbSet
+                .Where(b => b.Id == buildingId)
+                .SelectMany(b => b.Condos)
+                .Where(c => c.User != null)
+                .Select(c => c.User)
+                .Distinct() // user can appear in multiple buildings so important to only select few.
+                .ToList();
         }
+
     }
 }

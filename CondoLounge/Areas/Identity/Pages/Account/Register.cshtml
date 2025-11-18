@@ -1,9 +1,43 @@
-﻿<div class="form-group">
-    <label>Building</label>
-    <select asp-for="Input.BuildingId" asp-items="Model.Buildings" class="form-control"></select>
-</div>
+﻿@page
+@model CondoLounge.Areas.Identity.Pages.Account.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
 
-<div class="form-group">
-    <label>Condo</label>
-    <select asp-for="Input.CondoId" asp-items="Model.Condos" class="form-control"></select>
-</div>
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div>
+        <label asp-for="Input.Email"></label>
+        <input asp-for="Input.Email" />
+        <span asp-validation-for="Input.Email"></span>
+    </div>
+    <div>
+        <label asp-for="Input.Password"></label>
+        <input asp-for="Input.Password" type="password" />
+        <span asp-validation-for="Input.Password"></span>
+    </div>
+    <div>
+        <label asp-for="Input.ConfirmPassword"></label>
+        <input asp-for="Input.ConfirmPassword" type="password" />
+        <span asp-validation-for="Input.ConfirmPassword"></span>
+    </div>
+
+    <div>
+        <label asp-for="Input.BuildingId"></label>
+        <select asp-for="Input.BuildingId" asp-items="Model.Buildings"></select>
+        <span asp-validation-for="Input.BuildingId"></span>
+    </div>
+
+    <div>
+        <label asp-for="Input.CondoId"></label>
+        <select asp-for="Input.CondoId" asp-items="Model.Condos"></select>
+        <span asp-validation-for="Input.CondoId"></span>
+    </div>
+
+    <button type="submit">Register</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
