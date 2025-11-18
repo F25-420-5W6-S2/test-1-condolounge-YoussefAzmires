@@ -1,4 +1,4 @@
-**Read all document before starting**
+﻿**Read all document before starting**
 
 Welcome to the CondoLounge App
 
@@ -18,3 +18,5 @@ To do:
 5. Change the Registration page to add an Building, Condo and Default role to user (3%)
 6. Create a repo method to get all the Users for a Building (3%)
 7. Create a repo method to get all the Condos for a Building (3%)
+
+
