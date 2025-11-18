@@ -1,9 +1,7 @@
-﻿
-using CondoLounge.Data.Entities;
-using CondoLounge.Data;
+﻿using CondoLounge.Data.Entities;
 using Microsoft.AspNetCore.Identity;
 
-namespace backend.Data
+namespace CondoLounge.Data
 {
     public class Seeder
     {
@@ -88,14 +86,11 @@ namespace backend.Data
 
                 if (result.Succeeded)
                 {
-                    // Add to Role
                     await _userManager.AddToRoleAsync(admin, "Admin");
 
-                    // Assign the condo to the admin
                     initialCondo.User = admin;
                 }
 
-                // Default user example
                 var user = new ApplicationUser()
                 {
                     UserName = "user@email.com",

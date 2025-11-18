@@ -31,7 +31,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IRepositoryProvider, RepositoryProvider>();
 
 
-// builder.Services.AddTransient<Seeder>();
+ builder.Services.AddTransient<Seeder>();
 
 
 var app = builder.Build();

@@ -202,3 +202,4 @@ C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\bin\
 C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\2382783\Source\Repos\test-1-condolounge-YoussefAzmires\CondoLounge\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
